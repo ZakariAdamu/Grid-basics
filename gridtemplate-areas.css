@@ -1,0 +1,47 @@
+body {
+    display: grid;
+    height: 97.7vh;
+    grid-template-areas:
+        "head head head"
+        "article main section"
+        "footer footer footer";
+    grid-template-rows: 40px 1fr 40px;
+    grid-template-columns: 150px 1fr 150px;
+}
+
+header {
+    grid-area: head;
+    background-color: lightsalmon;
+    text-align: center;
+    align-content: center;
+
+}
+
+section {
+    grid-area: section;
+    background-color: skyblue;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+main {
+    grid-area: main;
+    background-color: lightcyan;
+    text-align: center;
+    padding-top: 20px;
+}
+
+article {
+    grid-area: article;
+    background-color: darkcyan;
+    text-align: center;
+    padding-top: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: firebrick;
+    text-align: center;
+    align-content: center;
+}
